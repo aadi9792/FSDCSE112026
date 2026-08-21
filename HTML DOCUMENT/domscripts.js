@@ -13,8 +13,12 @@ function removeParagraph() {
     parent.removeChild(para);
 }
 function removeAllParagraphs() {
+    const para = document.querySelectorAll("p");
     const parent = document.getElementById("root");
-    while (parent.firstChild) {
-        parent.removeChild(parent.firstChild);
-    }
+    // while (parent.firstChild) {
+    //     parent.removeChild(parent.firstChild);
+    // }
+    para.forEach((i) => {
+        parent.removeChild(i);
+    });
 }
