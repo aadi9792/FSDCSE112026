@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className="footer">
-        <h2>Design & Developed by Aditya Yadav</h2>
+        <h2>Design & Developed by Aditya Singh</h2>
     </div>
   )
 }
