@@ -1,0 +1,86 @@
+/* ─── HEADER ──────────────────────────────────────────────── */
+.header {
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #111111 100%);
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+}
+
+.header h1 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, #fff 40%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── NAVBAR ──────────────────────────────────────────────── */
+.Navbar {
+  width: 100%;
+  height: 48px;
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: color 0.2s ease, background 0.2s ease;
+  letter-spacing: 0.3px;
+}
+
+.Navbar a:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.Navbar a.active {
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+/* ─── HOME / PRODUCT GRID ─────────────────────────────────── */
+.home {
+  width: 100%;
+  min-height: 80vh;
+  padding: 32px 24px;
+  background-color: #0f0f0f;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ─── FOOTER ──────────────────────────────────────────────── */
+.footer {
+  width: 100%;
+  height: 56px;
+  background-color: var(--surface);
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
